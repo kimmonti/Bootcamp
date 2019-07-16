@@ -1,3 +1,5 @@
+#RODI
+#Robot con sensor de distancia y color.
 import rodi #Para exportar la biblioteca de codigos de rodi
 import time #Para exportar la biblioteca de tiempos
 
