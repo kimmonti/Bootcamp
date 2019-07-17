@@ -113,10 +113,25 @@ dinosaurio.skin("plumoso")
 dinosaurio.height(2)
 dinosaurio.characteristics()
 dinosaurio.cut_paws(2)
-dinosaurio.characteristics()e
+dinosaurio.characteristics()
 
 dinosaurio2 = Dino("Tealha","una hembra, alfa, ovarios de acero, perra fria e inalcanzable",2)
 dinosaurio2.skin("escamoso")
 dinosaurio2.height(2)
 dinosaurio2.characteristics()
+
+#### Herencia ####
+class TRex(Dino): #Permite que TRex comparta métodos y atributos similares a Dino.
+    def __init__(self, nombre, genero, patas = 4, ojos = 2):
+        self.its_name= nombre
+        self.its_genre= genero
+        self.its_paws= patas
+        self.its_eyes= ojos
+        print ("Hola, soy un TREX y me llamo", self.its_name)
+    
+robert = TRex("Roberto el TRex", "lo que se te antoje")
+robert.height(4)
+robert.skin("escamoso")
+robert.characteristics()
+
 
